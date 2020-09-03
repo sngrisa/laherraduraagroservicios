@@ -1,0 +1,58 @@
+@black:#000000;
+@blue:#1f5c7d;
+@green:#30b355;
+@white:#ffffff;
+
+.margenes(@top: 0px,@bottom: 50px) {
+  margin-top: @top;
+  margin-bottom:@bottom;
+}
+.colorletras(@color){
+  color: @color;
+};
+.colorfondo(@color2) {
+  background-color: @color2;
+}
+.padding(@padding) {
+  padding-top: @padding;
+}
+.padding2(@padding1,@padding2) {
+  padding-right: @padding1;
+  padding-left: @padding2;
+}
+.jumbotron{
+  .colorfondo(@black);
+    .colorletras(@white);
+    .margenes(50px, 0px);
+   }
+   .btn{
+    .colorfondo(@blue);
+    .colorletras(@white);
+   }
+   footer{
+     padding: 10px 10px 0 10px;
+    .colorfondo(@black);
+    .colorletras(@white);
+    .margenes(0px, 10px);
+   }
+   .cartel{
+       flex: 1 200px;
+       .margenes(10px, 0px);
+   }
+   .btn-reserved{
+    width: 100%;
+    border-radius: 0px;
+   }
+   .footer-adress-icon{
+    .padding2(10px, 0px);
+   }
+   
+   .tab-content{
+    .padding(10px);
+   }
+   
+   .btn-secondary{
+    .colorfondo(@green);
+    .colorletras(@white);
+     .padding(10px);
+   }

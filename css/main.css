@@ -1,0 +1,38 @@
+.jumbotron{
+ background-color: black;
+ color: white;
+ margin-top: 50px;
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+footer{
+  padding: 10px 10px 0 10px;
+  background-color: black;
+  color:white;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.cartel{
+    flex: 1 200px;
+    margin-top: 10px;
+}
+.btn-reserved{
+ width: 100%;
+ border-radius: 0px;
+}
+.footer-adress-icon{
+  padding-right: 10px;
+}
+
+.tab-content{
+  padding-top: 10px;
+}
+
+.btn-secondary{
+  background-color: black;
+  color: whitesmoke;
+  padding-top: 10px;
+}
+

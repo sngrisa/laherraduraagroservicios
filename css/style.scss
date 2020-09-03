@@ -1,0 +1,59 @@
+$black:#000000;
+$green:#66c477;
+$yellow: #fcba03;
+$white:#ffffff;
+$red:#b33a22;
+
+@mixin margenes($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+@mixin colorletras($color) {
+  color: $color;
+}
+@mixin colorfondo($color2) {
+  background-color: $color2;
+}
+@mixin padding($padding) {
+  padding-top: $padding;
+}
+@mixin padding2($padding1,$padding2) {
+  padding-right: $padding1;
+  padding-left: $padding2;
+}
+.jumbotron{
+  @include colorfondo($black);
+    @include colorletras($white);
+    @include margenes(50px, 0px);
+   }
+   .btn{
+    @include colorfondo($green);
+    @include colorletras($black);
+   }
+   footer{
+     padding: 10px 10px 0 10px;
+     @include colorfondo($black);
+     @include colorletras($white);
+     @include margenes(0px, 10px);
+   }
+   .cartel{
+       flex: 1 200px;
+       @include margenes(10px, 0px);
+   }
+   .btn-reserved{
+    width: 100%;
+    border-radius: 0px;
+   }
+   .footer-adress-icon{
+    @include padding2(10px, 0px);
+   }
+   
+   .tab-content{
+    @include padding(10px);
+   }
+   
+   .btn-secondary{
+    @include colorfondo($red);
+    @include colorletras($black);
+     @include padding(10px);
+   }
